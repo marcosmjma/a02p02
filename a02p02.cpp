@@ -41,7 +41,7 @@ int main(int argc, char * argv[])	{
 	for (msg_size = 1; msg_size <= max_size; msg_size *= 2) {
 		char *buf = new char[msg_size];
 		if (!buf) {
-			fprintf(stderr,"Insuficcient memory--msg_size=%ld");
+			fprintf(stderr,"Insuficcient memory--msg_size=%ld\n", msg_size);
 			break;
 		}
 		begin_time = MPI_Wtime();
